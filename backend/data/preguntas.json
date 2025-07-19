@@ -1,0 +1,254 @@
+[
+  {
+    "id": 1,
+    "pregunta": "¿Cuál describe mejor tu relación con los refrescos/bebidas gaseosas?",
+    "opciones": [
+      {"id": 1, "texto": "Los consumo regularmente (varias veces por semana)", "valor": "regular_consumidor"},
+      {"id": 2, "texto": "Los consumo ocasionalmente (1-2 veces por semana)", "valor": "ocasional_consumidor"},
+      {"id": 3, "texto": "Los consumo muy poco (solo en ocasiones especiales)", "valor": "muy_ocasional"},
+      {"id": 4, "texto": "Prefiero alternativas más saludables", "valor": "prefiere_alternativas"},
+      {"id": 5, "texto": "No consumo refrescos, solo bebidas naturales/agua", "valor": "no_consume_refrescos"}
+    ],
+    "categoria": "consumo_base",
+    "es_fija": true,
+    "peso_algoritmo": 1.0
+  },
+  {
+    "id": 2,
+    "pregunta": "¿Qué tipo de bebidas buscas principalmente?",
+    "opciones": [
+      {"id": 1, "texto": "Refrescos con sabor y gas (coca-cola, fanta, etc.)", "valor": "refrescos_tradicionales"},
+      {"id": 2, "texto": "Bebidas con poca azúcar pero con sabor", "valor": "bebidas_light"},
+      {"id": 3, "texto": "Aguas saborizadas y bebidas naturales", "valor": "bebidas_naturales"},
+      {"id": 4, "texto": "Bebidas energéticas y estimulantes", "valor": "bebidas_energeticas"},
+      {"id": 5, "texto": "Solo agua mineral o aguas simples", "valor": "solo_agua"}
+    ],
+    "categoria": "tipo_bebida_preferida",
+    "es_fija": false,
+    "peso_algoritmo": 1.0
+  },
+  {
+    "id": 3,
+    "pregunta": "¿Qué nivel de azúcar prefieres en tus bebidas?",
+    "opciones": [
+      {"id": 1, "texto": "Me encanta lo dulce, mientras más azúcar mejor", "valor": "alto_azucar"},
+      {"id": 2, "texto": "Dulce moderado, me gusta el sabor pero no excesivo", "valor": "medio_azucar"},
+      {"id": 3, "texto": "Prefiero sabores equilibrados, no muy dulces", "valor": "bajo_azucar"},
+      {"id": 4, "texto": "Evito el azúcar, prefiero edulcorantes artificiales", "valor": "sin_azucar_artificial"},
+      {"id": 5, "texto": "Solo bebidas sin azúcar o completamente naturales", "valor": "cero_azucar_natural"}
+    ],
+    "categoria": "nivel_azucar",
+    "es_fija": false,
+    "peso_algoritmo": 0.9
+  },
+  {
+    "id": 4,
+    "pregunta": "¿Qué es más importante para ti al elegir una bebida?",
+    "opciones": [
+      {"id": 1, "texto": "Que tenga buen sabor, sin importar si es saludable", "valor": "prioridad_sabor"},
+      {"id": 2, "texto": "Balance entre sabor y que no sea muy mala para la salud", "valor": "balance_sabor_salud"},
+      {"id": 3, "texto": "Que sea refrescante y me quite la sed efectivamente", "valor": "prioridad_refrescante"},
+      {"id": 4, "texto": "Que sea lo más saludable posible, aunque sepa menos", "valor": "prioridad_salud"},
+      {"id": 5, "texto": "Solo bebidas completamente naturales y sin químicos", "valor": "solo_natural"}
+    ],
+    "categoria": "prioridad_bebida",
+    "es_fija": false,
+    "peso_algoritmo": 1.0
+  },
+  {
+    "id": 5,
+    "pregunta": "¿Cómo te sientes respecto a los refrescos tradicionales?",
+    "opciones": [
+      {"id": 1, "texto": "Me encantan, son mis bebidas favoritas", "valor": "ama_refrescos"},
+      {"id": 2, "texto": "Me gustan pero trato de no abusar", "valor": "gusta_moderado"},
+      {"id": 3, "texto": "Los tomo solo en ocasiones sociales", "valor": "social_solamente"},
+      {"id": 4, "texto": "Los evito por salud pero a veces cedo", "valor": "evita_salud"},
+      {"id": 5, "texto": "Los considero dañinos y no los consumo", "valor": "rechaza_refrescos"}
+    ],
+    "categoria": "actitud_refrescos",
+    "es_fija": false,
+    "peso_algoritmo": 1.0
+  },
+  {
+    "id": 6,
+    "pregunta": "¿En qué situaciones prefieres tomar bebidas?",
+    "opciones": [
+      {"id": 1, "texto": "Con comidas, me gusta acompañar la comida", "valor": "con_comidas"},
+      {"id": 2, "texto": "Como snack cuando tengo antojo de algo dulce", "valor": "como_snack"},
+      {"id": 3, "texto": "Cuando hago ejercicio o después del ejercicio", "valor": "ejercicio_deporte"},
+      {"id": 4, "texto": "Solo cuando tengo mucha sed", "valor": "solo_sed"},
+      {"id": 5, "texto": "En cualquier momento del día", "valor": "cualquier_momento"}
+    ],
+    "categoria": "ocasion_consumo",
+    "es_fija": false,
+    "peso_algoritmo": 0.8
+  },
+  {
+    "id": 7,
+    "pregunta": "¿Qué tan importante es el precio al elegir una bebida?",
+    "opciones": [
+      {"id": 1, "texto": "Muy importante, siempre busco lo más económico", "valor": "precio_muy_importante"},
+      {"id": 2, "texto": "Importante, pero no lo más importante", "valor": "precio_importante"},
+      {"id": 3, "texto": "Moderadamente importante, depende del producto", "valor": "precio_moderado"},
+      {"id": 4, "texto": "Poco importante, prefiero calidad", "valor": "precio_poco_importante"},
+      {"id": 5, "texto": "No me importa el precio, solo la calidad", "valor": "precio_no_importa"}
+    ],
+    "categoria": "factor_precio",
+    "es_fija": false,
+    "peso_algoritmo": 0.7
+  },
+  {
+    "id": 8,
+    "pregunta": "¿Cómo prefieres el nivel de gas/carbonatación en tus bebidas?",
+    "opciones": [
+      {"id": 1, "texto": "Muy gaseosas, me encanta que tengan mucho gas", "valor": "muy_gaseosa"},
+      {"id": 2, "texto": "Moderadamente gaseosas, el nivel normal", "valor": "gaseosa_moderada"},
+      {"id": 3, "texto": "Poco gas, prefiero sabor suave", "valor": "poco_gas"},
+      {"id": 4, "texto": "Sin gas, solo bebidas planas", "valor": "sin_gas"},
+      {"id": 5, "texto": "Me da igual el nivel de gas", "valor": "gas_indiferente"}
+    ],
+    "categoria": "nivel_carbonatacion",
+    "es_fija": false,
+    "peso_algoritmo": 0.8
+  },
+  {
+    "id": 9,
+    "pregunta": "¿En qué momento del día consumes más bebidas?",
+    "opciones": [
+      {"id": 1, "texto": "Por la mañana temprano (6-10am)", "valor": "manana_temprano"},
+      {"id": 2, "texto": "A media mañana y mediodía (10am-2pm)", "valor": "mediodia"},
+      {"id": 3, "texto": "Por la tarde (2-6pm)", "valor": "tarde"},
+      {"id": 4, "texto": "Por la noche (6-10pm)", "valor": "noche"},
+      {"id": 5, "texto": "Tarde en la noche (10pm en adelante)", "valor": "noche_tardia"}
+    ],
+    "categoria": "momento_consumo",
+    "es_fija": false,
+    "peso_algoritmo": 0.6
+  },
+  {
+    "id": 10,
+    "pregunta": "¿Qué tamaño de presentación prefieres generalmente?",
+    "opciones": [
+      {"id": 1, "texto": "Presentaciones pequeñas (200-350ml) para control", "valor": "presentacion_pequena"},
+      {"id": 2, "texto": "Presentaciones medianas (350-600ml) estándar", "valor": "presentacion_mediana"},
+      {"id": 3, "texto": "Presentaciones grandes (600ml-1L) para compartir", "valor": "presentacion_grande"},
+      {"id": 4, "texto": "Presentaciones familiares (1L+) para economía", "valor": "presentacion_familiar"},
+      {"id": 5, "texto": "No me importa el tamaño", "valor": "tamano_indiferente"}
+    ],
+    "categoria": "preferencia_tamano",
+    "es_fija": false,
+    "peso_algoritmo": 0.7
+  },
+  {
+    "id": 11,
+    "pregunta": "¿Cómo reaccionas ante sabores nuevos o diferentes?",
+    "opciones": [
+      {"id": 1, "texto": "Me emociona probar sabores únicos y experimentales", "valor": "aventurero_sabores"},
+      {"id": 2, "texto": "Me gusta probar cosas nuevas ocasionalmente", "valor": "ocasional_sabores"},
+      {"id": 3, "texto": "Prefiero sabores conocidos pero acepto variaciones", "valor": "conservador_sabores"},
+      {"id": 4, "texto": "Solo consumo sabores que ya conozco y me gustan", "valor": "tradicional_sabores"},
+      {"id": 5, "texto": "Tengo mis favoritos y no cambio", "valor": "fiel_sabores"}
+    ],
+    "categoria": "apertura_sabores",
+    "es_fija": false,
+    "peso_algoritmo": 0.8
+  },
+  {
+    "id": 12,
+    "pregunta": "¿Qué tipo de actividad realizas más frecuentemente?",
+    "opciones": [
+      {"id": 1, "texto": "Ejercicio intenso y deportes regulares", "valor": "actividad_intensa"},
+      {"id": 2, "texto": "Actividad física moderada (caminar, yoga)", "valor": "actividad_moderada"},
+      {"id": 3, "texto": "Trabajo de oficina principalmente", "valor": "trabajo_sedentario"},
+      {"id": 4, "texto": "Mezcla de actividades físicas y mentales", "valor": "actividad_mixta"},
+      {"id": 5, "texto": "Actividades principalmente relajadas", "valor": "actividad_relajada"}
+    ],
+    "categoria": "tipo_actividad",
+    "es_fija": false,
+    "peso_algoritmo": 0.8
+  },
+  {
+    "id": 13,
+    "pregunta": "¿Qué factores de salud consideras más importantes?",
+    "opciones": [
+      {"id": 1, "texto": "Contenido de azúcar y calorías", "valor": "salud_azucar_calorias"},
+      {"id": 2, "texto": "Ingredientes naturales vs artificiales", "valor": "salud_ingredientes_naturales"},
+      {"id": 3, "texto": "Vitaminas y minerales añadidos", "valor": "salud_vitaminas_minerales"},
+      {"id": 4, "texto": "Sin conservadores ni colorantes", "valor": "salud_sin_aditivos"},
+      {"id": 5, "texto": "No me preocupo por aspectos de salud", "valor": "salud_no_importa"}
+    ],
+    "categoria": "enfoque_salud",
+    "es_fija": false,
+    "peso_algoritmo": 0.9
+  },
+  {
+    "id": 14,
+    "pregunta": "¿En qué clima o temperatura prefieres beber?",
+    "opciones": [
+      {"id": 1, "texto": "Solo cuando hace mucho calor", "valor": "clima_calor_extremo"},
+      {"id": 2, "texto": "Principalmente en clima cálido", "valor": "clima_calido"},
+      {"id": 3, "texto": "En cualquier clima, temperatura no importa", "valor": "clima_cualquiera"},
+      {"id": 4, "texto": "Prefiero en clima fresco o templado", "valor": "clima_fresco"},
+      {"id": 5, "texto": "Más en invierno que en verano", "valor": "clima_frio"}
+    ],
+    "categoria": "preferencia_clima",
+    "es_fija": false,
+    "peso_algoritmo": 0.5
+  },
+  {
+    "id": 15,
+    "pregunta": "¿Qué tipo de sabores frutales prefieres?",
+    "opciones": [
+      {"id": 1, "texto": "Cítricos intensos (limón, naranja, toronja)", "valor": "sabor_citricos_intensos"},
+      {"id": 2, "texto": "Frutas tropicales (mango, piña, coco)", "valor": "sabor_tropicales"},
+      {"id": 3, "texto": "Frutas del bosque (fresa, mora, arándano)", "valor": "sabor_frutos_bosque"},
+      {"id": 4, "texto": "Sabores frutales suaves y naturales", "valor": "sabor_frutales_suaves"},
+      {"id": 5, "texto": "No me gustan los sabores frutales", "valor": "no_sabores_frutales"}
+    ],
+    "categoria": "preferencia_sabores_frutales",
+    "es_fija": false,
+    "peso_algoritmo": 0.8
+  },
+  {
+    "id": 16,
+    "pregunta": "¿Cómo te sientes respecto a la cafeína en las bebidas?",
+    "opciones": [
+      {"id": 1, "texto": "Me encanta la cafeína, me da energía", "valor": "cafeina_positiva"},
+      {"id": 2, "texto": "La cafeína está bien con moderación", "valor": "cafeina_moderada"},
+      {"id": 3, "texto": "Prefiero poca cafeína o natural", "valor": "cafeina_poca"},
+      {"id": 4, "texto": "Evito la cafeína por salud", "valor": "cafeina_evitar"},
+      {"id": 5, "texto": "La cafeína me hace mal, la rechazo", "valor": "cafeina_rechazo"}
+    ],
+    "categoria": "actitud_cafeina",
+    "es_fija": false,
+    "peso_algoritmo": 0.8
+  },
+  {
+    "id": 17,
+    "pregunta": "¿Qué tan importante es la marca de la bebida para ti?",
+    "opciones": [
+      {"id": 1, "texto": "Muy importante, solo consumo marcas conocidas", "valor": "marca_muy_importante"},
+      {"id": 2, "texto": "Importante, prefiero marcas reconocidas", "valor": "marca_importante"},
+      {"id": 3, "texto": "Moderadamente importante, depende del producto", "valor": "marca_moderada"},
+      {"id": 4, "texto": "Poco importante, pruebo marcas nuevas", "valor": "marca_poco_importante"},
+      {"id": 5, "texto": "No me importa la marca, solo el sabor", "valor": "marca_no_importa"}
+    ],
+    "categoria": "importancia_marca",
+    "es_fija": false,
+    "peso_algoritmo": 0.6
+  },
+  {
+    "id": 18,
+    "pregunta": "¿Qué tipo de experiencia buscas al beber?",
+    "opciones": [
+      {"id": 1, "texto": "Hidratación pura y refrescante", "valor": "experiencia_hidratacion"},
+      {"id": 2, "texto": "Placer y disfrute del sabor", "valor": "experiencia_placer"},
+      {"id": 3, "texto": "Energía y estimulación", "valor": "experiencia_energia"},
+      {"id": 4, "texto": "Relajación y bienestar", "valor": "experiencia_relajacion"},
+      {"id": 5, "texto": "Acompañamiento para comidas", "valor": "experiencia_acompanamiento"}
+    ],
+    "categoria": "tipo_experiencia",
+    "es_fija": false,
+    "peso_algoritmo": 0.9
+  }
+]

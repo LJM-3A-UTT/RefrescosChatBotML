@@ -1,0 +1,70 @@
+Using API URL: https://0c97e9b2-957f-4de3-97d8-fd50a71ffe1e.preview.emergentagent.com/api
+
+================================================================================
+🤖 REFRESCOBOT ML CORRECTIONS AND IMPROVEMENTS TEST SUITE
+================================================================================
+
+🔍 Testing Error toFixed Correction - /recomendaciones-alternativas structure...
+✅ Error toFixed Correction: SUCCESS - Probability field exists and is a number: 95.0
+✅ Error toFixed Correction: SUCCESS - factores_clave field exists
+
+🔍 Testing 6 Questions Configuration...
+✅ 6 Questions Configuration: SUCCESS - Session created with ID: 5ea97078-3872-4acb-88c2-c5139b4a6fc2
+✅ 6 Questions Configuration: SUCCESS - total_preguntas is set to 6
+
+🔍 Testing Collaborative Learning Improvement...
+✅ Collaborative Learning: Initial probability for Coca-Cola Clásica: 95.0%
+✅ Collaborative Learning: Rated Coca-Cola Clásica with 5 stars
+✅ Collaborative Learning: New probability for Coca-Cola Clásica: 95.0%
+❌ Collaborative Learning: FAILED - Probability did not increase (95.0% to 95.0%)
+
+🔍 Testing No More Options Handling...
+✅ No More Options Handling: Found 8 total bebidas
+✅ No More Options Handling: 8 bebidas recommended initially
+✅ No More Options Handling: SUCCESS - sin_mas_opciones flag is true
+✅ No More Options Handling: Message: 'Lo siento, por el momento no tengo más opciones alternativas disponibles. ¡Pero puedes intentar de nuevo más tarde cuando tengamos nuevos productos!'
+✅ No More Options Handling: SUCCESS - Message indicates no more options
+
+🔍 Testing Configuration File...
+✅ Configuration File: SUCCESS - Session created with ID: e8b44f41-1b2a-4135-b293-265cbd834d9e
+✅ Configuration File: SUCCESS - TOTAL_PREGUNTAS is set to 6
+✅ Configuration File: Refrescos message: 'Basándome en tu personalidad y respuestas, aquí están tus refrescos ideales:'
+✅ Configuration File: Alternativas message: 'También podrían interesarte estas opciones más saludables:'
+✅ Configuration File: SUCCESS - System messages are set from configuration
+
+🔍 Testing Complete Flow...
+✅ Complete Flow: Step 1 - Session started with ID: d8febca4-13de-4350-9a22-05a8c63b23e1
+✅ Complete Flow: Step 2.1 - Got initial question: ¿Con qué frecuencia tomas refrescos normalmente?
+✅ Complete Flow: Step 2.2 - Answered initial question
+✅ Complete Flow: Step 2.3 - Got question 2: ¿Qué hiciste principalmente hoy?
+✅ Complete Flow: Step 2.3 - Answered question 2
+✅ Complete Flow: Step 2.4 - Got question 3: ¿Cómo te gusta celebrar los buenos momentos?
+✅ Complete Flow: Step 2.4 - Answered question 3
+✅ Complete Flow: Step 2.5 - Got question 4: ¿Qué tan aventurero eres con sabores nuevos?
+✅ Complete Flow: Step 2.5 - Answered question 4
+✅ Complete Flow: Step 2.6 - Got question 5: ¿Qué tanto te gustan las burbujas en las bebidas?
+✅ Complete Flow: Step 2.6 - Answered question 5
+✅ Complete Flow: Step 2.7 - Got question 6: ¿Cuál es tu sabor favorito en general?
+✅ Complete Flow: Step 2.7 - Answered question 6
+✅ Complete Flow: Step 3 - Got 5 real refrescos and 3 alternative bebidas
+✅ Complete Flow: Step 3 - All recommendations have probabilities
+   Refresco 1: Coca-Cola Clásica - 95.0% probability
+   Refresco 2: Pepsi - 95.0% probability
+✅ Complete Flow: Step 4 - Rated Coca-Cola Clásica with 5 stars
+✅ Complete Flow: Step 5 - No more options reached after 1 requests
+✅ Complete Flow: Step 6 - No more options message: 'Lo siento, por el momento no tengo más opciones alternativas disponibles. ¡Pero puedes intentar de nuevo más tarde cuando tengamos nuevos productos!'
+✅ Complete Flow: Step 6 - Message correctly indicates no more options
+
+================================================================================
+📊 TEST RESULTS SUMMARY
+================================================================================
+✅ PASS - Error toFixed Correction
+✅ PASS - 6 Questions Configuration
+❌ FAIL - Collaborative Learning
+✅ PASS - No More Options Handling
+✅ PASS - Configuration File
+✅ PASS - Complete Flow
+
+================================================================================
+🏁 OVERALL RESULT: ❌ SOME TESTS FAILED
+================================================================================

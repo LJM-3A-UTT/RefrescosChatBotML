@@ -1,0 +1,38 @@
+{
+  "id": 16,
+  "nombre": "Red Bull Energy Drink",
+  "descripcion": "Red Bull te da alas. Bebida energética con cafeína, taurina, vitaminas B y sacarosa que mejora el rendimiento físico y mental.",
+  "categoria": "energeticas",
+  "es_refresco_real": true,
+  "nivel_dulzura": 6,
+  "es_energizante": true,
+  "perfil_sabor": "energetico_frutal",
+  "contenido_calorias": "medio",
+  "precio_base": 30.0,
+  "presentaciones": [
+    {
+      "presentation_id": "16_250",
+      "ml": 250,
+      "precio": 30.0,
+      "imagen_local": "/static/images/bebidas/RedBull_250ml.webp",
+      "puntuacion_promedio": 3.0,
+      "total_puntuaciones": 0,
+      "categoria_presentacion": "mini"
+    },
+    {
+      "presentation_id": "16_355",
+      "ml": 355,
+      "precio": 35.0,
+      "imagen_local": "/static/images/bebidas/RedBull_355ml.webp",
+      "puntuacion_promedio": 3.0,
+      "total_puntuaciones": 0,
+      "categoria_presentacion": "individual"
+    }
+  ],
+  "categorias_ml": [],
+  "tags_automaticos": [],
+  "cluster_id": null,
+  "features_imagen": null,
+  "fecha_agregado": "2025-01-15T00:00:00",
+  "procesado_ml": false
+}
